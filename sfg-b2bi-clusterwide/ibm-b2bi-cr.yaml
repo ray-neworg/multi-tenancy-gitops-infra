@@ -2,10 +2,12 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   annotations:
-    argocd.argoproj.io/sync-wave: "260"
+    argocd.argoproj.io/sync-wave: "270"
   name: "ibm-b2bi-psp"
   labels:
     app: "ibm-b2bi-psp"
+imagePullSecrets:
+  - name: ibm-entitlement-key
 rules:
 - apiGroups:
   - policy

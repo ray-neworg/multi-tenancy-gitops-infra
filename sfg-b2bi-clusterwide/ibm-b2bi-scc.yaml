@@ -6,6 +6,8 @@ metadata:
   name: ibm-b2bi-scc
   labels:
    app: "ibm-b2bi-scc"
+imagePullSecrets:
+  - name: ibm-entitlement-key
 allowHostDirVolumePlugin: false
 allowHostIPC: false
 allowHostNetwork: false
