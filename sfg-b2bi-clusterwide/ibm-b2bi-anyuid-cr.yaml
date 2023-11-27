@@ -2,8 +2,6 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: ibm-b2bi-anyuid-scc
-imagePullSecrets:
-  - name: ibm-entitlement-key
 rules:
   - apiGroups:
       - security.openshift.io

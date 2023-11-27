@@ -7,8 +7,6 @@ metadata:
     app: "ibm-b2bi-scc"
   annotations:
     argocd.argoproj.io/sync-wave: "270"
-imagePullSecrets:
-  - name: ibm-entitlement-key
 rules:
 - apiGroups:
   - security.openshift.io

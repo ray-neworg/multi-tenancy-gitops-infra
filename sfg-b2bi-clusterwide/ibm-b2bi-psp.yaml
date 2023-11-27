@@ -1,4 +1,4 @@
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodSecurityPolicy
 metadata:
   annotations:
@@ -6,8 +6,6 @@ metadata:
   name: "ibm-b2bi-psp"
   labels:
     app: "ibm-b2bi-psp"
-imagePullSecrets:
-  - name: ibm-entitlement-key
 spec:
   privileged: false
   allowPrivilegeEscalation: false
